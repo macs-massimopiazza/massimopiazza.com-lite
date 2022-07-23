@@ -1,0 +1,18 @@
+---
+title: Homepage
+layout: 'base.njk'
+---
+
+{% if collections.jumbo1[0].data.visible %}
+    {% include 'components/jumbo1.njk' %}
+{% endif %}
+
+<section id="featured-articles" class="py-4 bg-light">
+    <div class="container">
+        <div class="row">
+            {%- for post in collections.featured -%}
+                {% include 'article-card.njk' %}
+            {%- endfor -%}
+        </div>
+    </div>
+</section>

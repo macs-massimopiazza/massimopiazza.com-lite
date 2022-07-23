@@ -1,0 +1,24 @@
+{
+    "name": "massimopiazza.com lite",
+    "version": "1.0.0",
+    "description": "Lighter version of my personal site",
+    "main": "index.js",
+    "scripts": {
+        "serve": "eleventy --serve",
+        "build": "eleventy"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/macs-massimopiazza/massimopiazza.com-lite.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/macs-massimopiazza/massimopiazza.com-lite/issues"
+    },
+    "homepage": "https://github.com/macs-massimopiazza/massimopiazza.com-lite#readme",
+    "devDependencies": {
+        "@11ty/eleventy": "^1.0.1"
+    }
+}

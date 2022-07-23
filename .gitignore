@@ -1,0 +1,13 @@
+# npm dependencies
+node_modules
+
+# build files
+public
+css
+
+# errors and stuff you don't wanna share
+.env
+.log
+
+# macOS related files
+.DS_Store
