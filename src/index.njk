@@ -3,16 +3,34 @@ title: Homepage
 layout: 'base.njk'
 ---
 
-{% if collections.jumbo1[0].data.visible %}
-    {% include 'components/jumbo1.njk' %}
-{% endif %}
-
-<section id="featured-articles" class="py-4 bg-light">
+<main class="container">
+    <section id="intro">
+        <h1>Ciaoo ✨</h1>
+        <p>I'm massimo piazza and I do various things: <br> Web development, teaching, project managment & more 👨‍🔧</p>
+    </section>
+    <section id="on-going">
+        <h3>On going stuff:</h3>
+        <ul>
+            {%- for job in collections.jobs -%}
+                <li>{{ job.data.profession }} for <a href="{{ job.data.company-link }}">{{ job.data.company }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </section>
+    <section id="projects">
+        <h3>Projects:</h3>
+        <ul>
+            {%- for project in collections.projects -%}
+                <li>{{ project.data.description }} <a href="{{ project.data.link }}">{{ project.data.title }}</a></li>
+            {%- endfor -%}
+        </ul>
+    </section>
+</main>
+{# <section id="featured-articles" class="py-4 bg-light">
     <div class="container">
         <div class="row">
             {%- for post in collections.featured -%}
-                {% include 'article-card.njk' %}
+                ciao
             {%- endfor -%}
         </div>
     </div>
-</section>
+</section> #}
