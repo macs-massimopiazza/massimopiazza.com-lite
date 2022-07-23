@@ -1,5 +1,5 @@
 ---
-profession: teacher assistant & project manager
+profession: Teacher assistant & project manager
 company: boolean careers
 company-link: https://boolean.careers
 starting-date: 2021-12-01
