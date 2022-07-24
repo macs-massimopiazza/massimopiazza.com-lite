@@ -33,13 +33,13 @@ ul {
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: var(--clr-accent-800);
+        background: var(--clr-accent-600);
         border-radius: 15px;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: var(--clr-accent-800);
+        background: var(--clr-accent-600);
     }   
 }
 
@@ -87,7 +87,7 @@ p {
 }
 
 a:visited {
-    color: var(--clr-accent-800);
+    color: var(--clr-accent-600);
 }
 
 .container {
@@ -117,7 +117,7 @@ section#projects a {
 
 section#projects a:hover {
     text-decoration: underline;
-    color: var(--clr-accent-800);
+    color: var(--clr-accent-600);
 }
 
 section#projects .project-spacer {
