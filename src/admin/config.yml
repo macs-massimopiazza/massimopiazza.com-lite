@@ -8,7 +8,7 @@ display_url: https://macs-basic-blog.netlify.app
 logo_url: "/assets/logo.svg"
 collections: 
   - name: "jobs"
-    label: "Job"
+    label: "Jobs"
     folder: "src/jobs"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{company}}"
@@ -21,16 +21,16 @@ collections:
       - {label: "Description", name: "description", widget: "text"}
       - {label: "Date", name: "starting-date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ["jobs"]}
-    - name: "projects"
-      label: "Project"
-      folder: "src/projects"
-      create: true
-      slug: "{{year}}-{{month}}-{{day}}-{{title}}"
-      #default fields for blog article
-      fields:
-        - {label: "Title", name: "title", widget: "string"}
-        - {label: "Description", name: "description", widget: "text"}
-        - {label: "File", name: "file", widget: "file", default: ''}
-        - {label: "Link", name: "link", widget: "string", default: ''}
-        - {label: "Date", name: "starting-date", widget: "datetime"}
-        - {label: "Tags", name: "tags", widget: "list", default: ["projects"]}
+  - name: "projects"
+    label: "Projects"
+    folder: "src/projects"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    #default fields for blog article
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "File", name: "file", widget: "file", default: ''}
+      - {label: "Link", name: "link", widget: "string", default: ''}
+      - {label: "Date", name: "starting-date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["projects"]}
