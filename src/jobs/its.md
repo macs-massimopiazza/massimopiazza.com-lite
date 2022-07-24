@@ -1,8 +1,8 @@
 ---
 profession: Project manager
-suffix: for
 company: its last verona
+suffix: for
 link: https://itslogistica.it
-starting-date: 2022-06-01
 description: blabla
+starting-date: 2022-05-31T22:00:00.000Z
 ---
