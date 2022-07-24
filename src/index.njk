@@ -3,27 +3,6 @@ title: Homepage
 layout: 'base.njk'
 ---
 
-<section id="intro">
-    <h1>Ciaoo ✨</h1>
-    <p>I'm massimo piazza and I do various things: <br> Web development, teaching, project managment & more 👨‍🔧</p>
-</section>
-<section id="on-going">
-    <h3>On going stuff:</h3>
-    <ul>
-        {%- for job in collections.jobs -%}
-            <li>{{ job.data.profession }} {{ job.data.suffix }} <a target="_blank" href="{{ job.data.link }}">{{ job.data.company }}</a></li>
-        {%- endfor -%}
-    </ul>
-</section>
-<section id="projects">
-    <h3>Projects:</h3>
-    <div class="projects-wrapper">
-        {%- for project in collections.projects -%}
-        <div class="project">
-            <a 
-            href="{% if project.data.link !== '' %}{{ project.data.link }}{% elif project.data.file !== '' %}{{ project.data.file }}{% else %}#{% endif %}" 
-            target="_blank">{{ project.data.title }}</a>{% if loop.index < loop.length %}<span class="project-spacer">|</span>{% endif %}
-        </div>
-        {%- endfor -%}
-    </div>
-</section>
+{% include 'sections/intro.njk' %}
+{% include 'sections/on-going.njk' %}
+{% include 'sections/projects.njk' %}

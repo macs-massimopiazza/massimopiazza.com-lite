@@ -1,0 +1,12 @@
+<section id="projects">
+    <h3>Projects:</h3>
+    <div class="projects-wrapper">
+        {%- for project in collections.projects -%}
+        <div class="project">
+            <a 
+            href="{% if project.data.link !== '' %}{{ project.data.link }}{% elif project.data.file !== '' %}{{ project.data.file }}{% else %}#{% endif %}" 
+            target="_blank">{{ project.data.title }}</a>{% if loop.index < loop.length %}<span class="project-spacer">|</span>{% endif %}
+        </div>
+        {%- endfor -%}
+    </div>
+</section>
