@@ -1,7 +1,7 @@
 <section id="projects">
     <h3>Projects:</h3>
     <div class="projects-wrapper">
-        {%- for project in collections.projects -%}
+        {%- for project in collections.projects | reverse -%}
         <div class="project">
             <a 
             href="{% if project.data.link !== '-' %}{{ project.data.link }}{% elif project.data.file !== '-' %}{{ project.data.file }}{% else %}#{% endif %}" 
