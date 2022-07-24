@@ -8,17 +8,16 @@ display_url: https://macs-basic-blog.netlify.app
 logo_url: "/assets/logo.svg"
 collections: 
   - name: "jobs"
-    label: "Blog"
+    label: "Jobs"
     folder: "src/jobs"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{company}}"
     #default fields for blog article
     fields:
-      - {label: "Title", name: "title", widget: "string"}
-      - {label: "Author", name: "author", widget: "string"}
-      - {label: "Description", name: "description", widget: "string"}
-      - {label: "Date", name: "date", widget: "datetime"}
-      - {label: "Tags", name: "tags", widget: "list", default: ["post"]}
-      - {label: "Featured Image", name: "image", widget: "image"}
-      - {label: "Image caption", name: "imageAlt", widget: "string"}
-      - {label: "Body", name: "body", widget: "markdown"}
+      - {label: "Profession", name: "profession", widget: "string"}
+      - {label: "Company", name: "company", widget: "string"}
+      - {label: "Suffix", name: "suffix", widget: "string"}
+      - {label: "Link", name: "link", widget: "string"}
+      - {label: "Description", name: "description", widget: "text"}
+      - {label: "Date", name: "starting-date", widget: "datetime"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["jobs"]}
