@@ -3,4 +3,17 @@ title: Success
 layout: 'base.njk'
 ---
 
-<h1>FESTAAAA, FORM INVIATO</h1>
+<div class="success-message-wrapper">
+    <div class="success-message">
+        <h1>Thank you!</h1>
+        <h3>😁😁😁</h3>
+        <h3>Message sent successfully</h3>
+        <h1 id="counter"></h1>
+    </div>
+</div>
+
+<script>
+    setTimeout(() => {
+        location.href = 'http://localhost:8080';
+    }, 5000)
+</script>
