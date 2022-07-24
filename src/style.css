@@ -105,6 +105,10 @@ section#intro {
     margin-bottom: 2rem;
 }
 
+section#intro p{
+    line-height: 1.7rem;
+}
+
 section#on-going ul li {
     margin-bottom: 0.5rem;
 }
@@ -115,7 +119,7 @@ section#projects a {
     transition: all 200ms;
 }
 
-section#projects a:hover {
+section#projects a:hover, section#projects a:focus {
     color: var(--clr-accent-600);
 }
 
