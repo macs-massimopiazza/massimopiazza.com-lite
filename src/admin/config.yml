@@ -1,8 +1,8 @@
 backend:
   name: git-gateway
   branch: master
-media_folder: "public/assets/blog"
-public_folder: "/assets/blog"
+media_folder: "public/assets"
+public_folder: "/assets"
 site_url: https://www.massimopiazza.com
 display_url: https://www.massimopiazza.com
 logo_url: "/assets/logo.svg"
