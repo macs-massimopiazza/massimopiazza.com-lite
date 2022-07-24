@@ -62,6 +62,10 @@ h3 {
     font-size: 3rem;
 }
 
+p {
+    margin-bottom: 0.3rem;
+}
+
 .container {
     max-width: 650px;
     margin: 0 auto;
