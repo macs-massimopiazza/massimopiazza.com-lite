@@ -122,6 +122,7 @@ section#projects a:hover {
 
 section#projects .project-spacer {
     padding-inline: 10px;
+    font-weight: 900;
 }
 
 section#projects .project {
