@@ -3,8 +3,11 @@
     --clr-primary-400: hsl(181, 45%, 81%);
     --clr-primary-600: hsl(181, 45%, 70%);
     --clr-secondary-400: hsl(3, 86%, 57%);
+    --clr-accent-600: hsl(216, 91%, 62%);
     --clr-accent-800: hsl(216, 91%, 42%);
-
+    --clr-white-400: hsl(0, 0%, 100%);
+    --clr-black-400: hsl(0, 0%, 0%);
+    --clr-black-100: hsl(0, 0%, 70%);
 }
 
 @media screen and (min-width: 650px) {
@@ -47,6 +50,8 @@ h6
 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
+    margin-bottom: 1rem;
+    margin-top: 0;
 }
 
 h1 {
@@ -59,15 +64,19 @@ h2 {
 }
 
 h3 {
-    font-size: 3rem;
+    font-size: 3.2rem;
 }
 
 p {
     margin-bottom: 0.3rem;
 }
 
+a:visited {
+    color: var(--clr-accent-800);
+}
+
 .container {
-    max-width: 650px;
+    max-width: 700px;
     margin: 0 auto;
     padding-block: 1rem;
     padding-inline: 0.25rem;
@@ -78,7 +87,7 @@ section#intro {
 }
 
 section {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
 }
 
 section#projects a {
@@ -99,3 +108,120 @@ section#projects .project-spacer {
 section#projects .project {
     display: inline-block;
 }
+
+section#get-in-touch h3 {
+    margin-bottom: 1.5rem;
+}
+
+/* FORM */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+}
+
+.input-container {
+    height: 50px;
+    position: relative;
+    width: 100%;
+}
+
+.input-container.ta {
+    height: auto;
+}
+
+.ic2 {
+    margin-top: 1.3rem;
+}
+
+.input {
+background-color: var(--clr-white-400);
+border-radius: 12px;
+border: 0;
+box-sizing: border-box;
+color: var(--clr-black-100);
+font-size: 20px;
+font-family: 'Work Sans', sans-serif;
+height: 100%;
+outline: 0;
+padding: 4px 20px 0;
+width: 100%;
+}
+
+.input.ta {
+    height: auto;
+    min-height: 170px;
+    padding-top: 15px;
+}
+
+.cut {
+background-color: var(--clr-primary-400);
+border-radius: 10px;
+height: 20px;
+left: 20px;
+position: absolute;
+top: -20px;
+transform: translateY(0);
+transition: transform 200ms;
+width: 102px;
+}
+
+.cut-md {
+    width: 87px;
+}
+
+.cut-short {
+    width: 63px;
+}
+
+.input:focus ~ .cut,
+.input:not(:placeholder-shown) ~ .cut {
+transform: translateY(8px);
+}
+
+.placeholder {
+color: var(--clr-black-100);
+left: 20px;
+line-height: 14px;
+pointer-events: none;
+position: absolute;
+transform-origin: 0 50%;
+transition: transform 200ms, color 200ms;
+top: 20px;
+}
+
+.input:focus ~ .placeholder,
+.input:not(:placeholder-shown) ~ .placeholder {
+transform: translateY(-30px) translateX(10px) scale(0.75);
+}
+
+.input:not(:placeholder-shown) ~ .placeholder {
+    color: var(--clr-secondary-400);
+    font-weight: 700;
+}
+
+.input:focus ~ .placeholder {
+    color: var(--clr-secondary-400);
+    font-weight: 700;
+}
+
+.submit {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    background-color: var(--clr-accent-600);
+    border-radius: 12px;
+    border: 0;
+    box-sizing: border-box;
+    color: var(--clr-white-400);
+    cursor: pointer;
+    font-size: 18px;
+    height: 50px;
+    margin-top: 1.3rem;
+    text-align: center;
+    width: 100%;
+}
+
+.submit:active {
+    background-color: var(--clr-accent-800);
+}
+
