@@ -97,12 +97,16 @@ a:visited {
     padding-inline: 0.25rem;
 }
 
+section {
+    margin-bottom: 1.8rem;
+}
+
 section#intro {
     margin-bottom: 2rem;
 }
 
-section {
-    margin-bottom: 1.8rem;
+section#on-going ul li {
+    margin-bottom: 0.5rem;
 }
 
 section#projects a {
