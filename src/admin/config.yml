@@ -8,7 +8,7 @@ display_url: https://macs-basic-blog.netlify.app
 logo_url: "/assets/logo.svg"
 collections: 
   - name: "jobs"
-    label: "Jobs"
+    label: "Job"
     folder: "src/jobs"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{company}}"
@@ -22,7 +22,7 @@ collections:
       - {label: "Date", name: "starting-date", widget: "datetime"}
       - {label: "Tags", name: "tags", widget: "list", default: ["jobs"]}
     - name: "projects"
-      label: "Projects"
+      label: "Project"
       folder: "src/projects"
       create: true
       slug: "{{year}}-{{month}}-{{day}}-{{title}}"
