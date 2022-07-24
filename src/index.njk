@@ -17,9 +17,13 @@ layout: 'base.njk'
 </section>
 <section id="projects">
     <h3>Projects:</h3>
-    <ul>
+    <div class="projects-wrapper">
         {%- for project in collections.projects -%}
-            <li>{{ project.data.description }} <a href="{{ project.data.link }}" target="_blank">{{ project.data.title }}</a></li>
+        <div class="project">
+            <a 
+            href="{% if project.data.link !== '' %}{{ project.data.link }}{% elif project.data.file !== '' %}{{ project.data.file }}{% else %}#{% endif %}" 
+            target="_blank">{{ project.data.title }}</a>{% if loop.index < loop.length %}<span class="project-spacer">|</span>{% endif %}
+        </div>
         {%- endfor -%}
-    </ul>
+    </div>
 </section>

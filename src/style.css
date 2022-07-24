@@ -2,8 +2,9 @@
 :root {
     --clr-primary-400: hsl(181, 45%, 81%);
     --clr-primary-600: hsl(181, 45%, 70%);
-    --clr-secondary-800: hsl(216, 91%, 42%);
-    --clr-accent-400: hsl(3, 86%, 57%);
+    --clr-secondary-400: hsl(3, 86%, 57%);
+    --clr-accent-800: hsl(216, 91%, 42%);
+
 }
 
 @media screen and (min-width: 650px) {
@@ -19,13 +20,13 @@
 
     /* Handle */
     ::-webkit-scrollbar-thumb {
-        background: var(--clr-secondary-800);
+        background: var(--clr-accent-800);
         border-radius: 15px;
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background: var(--clr-secondary-800);
+        background: var(--clr-accent-800);
     }   
 }
 
@@ -34,7 +35,7 @@ body {
     font-weight: 400;
     font-size: 1.3rem;
     background-color: var(--clr-primary-400);
-    color: var(--clr-accent-400)
+    color: var(--clr-secondary-400)
 }
 
 h1,
@@ -74,4 +75,23 @@ section#intro {
 
 section {
     margin-bottom: 1.5rem;
+}
+
+section#projects a {
+    text-decoration: none;
+    color: var(--clr-secondary-400);
+    transition: all 200ms;
+}
+
+section#projects a:hover {
+    text-decoration: underline;
+    color: var(--clr-accent-800);
+}
+
+section#projects .project-spacer {
+    padding-inline: 10px;
+}
+
+section#projects .project {
+    display: inline-block;
 }

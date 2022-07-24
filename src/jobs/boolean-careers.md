@@ -1,5 +1,5 @@
 ---
-profession: Teacher assistant & project manager
+profession: Teacher assistant & Project manager
 suffix: for
 company: boolean careers
 link: https://boolean.careers
