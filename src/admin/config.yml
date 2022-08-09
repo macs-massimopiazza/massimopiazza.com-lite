@@ -7,6 +7,15 @@ site_url: massimo-piazza-lite.netlify.app
 display_url: massimo-piazza-lite.netlify.app
 logo_url: "/assets/logo.svg"
 collections: 
+  - name: "activities"
+    label: "Intro Activities"
+    folder: "src/activities"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
+    #default fields for blog article
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: ["activities"]}
   - name: "jobs"
     label: "Jobs"
     folder: "src/jobs"
