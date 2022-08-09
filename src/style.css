@@ -46,7 +46,7 @@ ul {
 body {
     font-family: 'Work Sans', sans-serif;
     font-weight: 400;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     background-color: var(--clr-primary-400);
     color: var(--clr-secondary-400);
     min-height: 100vh;
@@ -70,8 +70,37 @@ h6
 }
 
 h1 {
-    font-size: 5rem;
+    font-size: 6rem;
     margin-bottom: 0.5rem;
+}
+
+@media screen and (max-width: 560px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .mobile-fixed {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        opacity: 0.5;
+        animation: wiggle 2s;
+    }
+
+    @keyframes wiggle {
+        0% {
+            top: -300px
+        }
+        30% {
+            top: 20px;
+        }
+        80% {
+            top: 0;
+        }
+    }
 }
 
 h2 {
@@ -80,6 +109,12 @@ h2 {
 
 h3 {
     font-size: 3.2rem;
+}
+
+@media screen and (max-width: 560px) {
+    h3 {
+        font-size: 2.5rem;
+    }
 }
 
 p {
@@ -94,7 +129,7 @@ a:visited {
     max-width: 840px;
     margin: 0 auto;
     padding-block: 1rem;
-    padding-inline: 0.25rem;
+    padding-inline: 2rem;
 }
 
 section {
@@ -107,6 +142,14 @@ section#intro {
 
 section#intro p{
     line-height: 1.7rem;
+}
+
+section#intro .activities {
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 10px;
 }
 
 section#on-going ul li {
@@ -128,12 +171,30 @@ section#projects .project-spacer {
     font-weight: 900;
 }
 
+@media screen and (max-width: 560px) {
+    section#projects .projects-wrapper {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.8rem;
+    }
+
+    section#projects .project-spacer {
+        display: none;
+    }
+}
+
 section#projects .project {
     display: inline-block;
 }
 
 section#get-in-touch h3 {
     margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 670px) {
+    section#get-in-touch .input-wrapper{
+        flex-direction: column;
+    }
 }
 
 /* SUCCESS PAGE */
@@ -202,11 +263,11 @@ width: 102px;
 }
 
 .cut-md {
-    width: 87px;
+    width: 94px;
 }
 
 .cut-short {
-    width: 63px;
+    width: 69px;
 }
 
 .input:focus ~ .cut,
