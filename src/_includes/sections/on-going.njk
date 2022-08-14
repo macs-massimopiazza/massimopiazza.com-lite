@@ -1,5 +1,5 @@
 <section id="on-going">
-    <h3>Main stuff:</h3>
+    <h3>Working as:</h3>
     <ul>
         {%- for job in collections.jobs | reverse -%}
             <li>{{ job.data.profession }} {{ job.data.suffix }} <a target="_blank" href="{{ job.data.link }}">{{ job.data.company }}</a></li>
