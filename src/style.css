@@ -16,6 +16,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 ul {
     margin-left: 1em;
 }
@@ -119,6 +123,10 @@ h3 {
 
 p {
     margin-bottom: 0.3rem;
+}
+
+a {
+    color: var(--clr-accent-600);
 }
 
 a:visited {

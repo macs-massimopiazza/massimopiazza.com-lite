@@ -1,9 +1,9 @@
 <section id="intro">
     <h1>Ciaoo <span class="mobile-fixed">✨</span></h1>
-    <p>I'm massimo piazza and I do various things: </p>
+    <p>Sono massimo piazza e faccio un po' di cose: </p>
     <div class="activities">
         {%- for activity in collections.activities -%}
-            <span>{{ activity.data.title }}{% if loop.last == false %},{% else %} & more 👨‍🔧{% endif %}</span>
+            <span>{{ activity.data.title }}{% if loop.last == false %},{% else %} & altro 👨‍🔧{% endif %}</span>
         {%- endfor -%}
     </div>
     <a target="_blank" href="https://www.linkedin.com/in/-massimo-piazza/">linkedin</a>
