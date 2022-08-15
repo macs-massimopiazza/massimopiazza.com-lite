@@ -1,3 +1,3 @@
 ---
-title: faccio project managment
+title: faccio project management
 ---
