@@ -133,6 +133,10 @@ a:visited {
     color: var(--clr-accent-600);
 }
 
+ul li {
+    margin-bottom: 0.5rem;
+}
+
 .container {
     max-width: 840px;
     margin: 0 auto;
@@ -159,10 +163,6 @@ section#intro .activities {
     flex-wrap: wrap;
     column-gap: 10px;
     align-items: baseline;
-}
-
-section#on-going ul li {
-    margin-bottom: 0.5rem;
 }
 
 section#projects a {

@@ -2,7 +2,7 @@
     <h3>Al momento sono:</h3>
     <ul>
         {%- for job in collections.jobs | reverse -%}
-            <li>{{ job.data.profession }} {{ job.data.suffix }} <a target="_blank" href="{{ job.data.link }}">{{ job.data.company }}</a></li>
+            <li>{{ job.data.profession }} {{ job.data.suffix }} <a target="{{ job.data.target }}" href="{{ job.data.link }}">{{ job.data.company }}</a></li>
         {%- endfor -%}
     </ul>
 </section>
